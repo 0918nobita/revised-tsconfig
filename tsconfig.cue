@@ -18,7 +18,7 @@ system = "System"
 umd = "UMD"
 
 
-compilerOptions: {
+compilerOptions: close({
   // Allow JavaScript files to be compiled.
   allowJs: true | *false
 
@@ -124,4 +124,4 @@ compilerOptions: {
   if esModuleInterop != true && module != system {
     allowSyntheticDefaultImports: true | *false
   }
-}
+})
