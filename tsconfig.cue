@@ -31,10 +31,20 @@ compilerOptions: {
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
   // Specify module code generation
+  module: string
   if target == es3 || target == es5 {
     module: none | *commonjs | amd | system | umd | es6 | es2015 | esnext
   }
   if target != es3 && target != es5 {
     module: none | commonjs | amd | system | umd | *es6 | es2015 | esnext
+  }
+
+  // Allow default imports from modules with no default export.
+  // This does not affect code emit, just typechecking.
+  if esModuleInterop == true || module == system {
+    allowSyntheticDefaultImports: *true | false
+  }
+  if esModuleInterop != true && module != system {
+    allowSyntheticDefaultImports: true | *false
   }
 }
