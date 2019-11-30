@@ -75,6 +75,11 @@ compilerOptions: {
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
+  // Provide full support for iterables in for..of, spread and destructuring.
+  if target == es3 || target == es5 {
+    downlevelIteration: true | *false
+  }
+
   // Specify module code generation
   module: string
   if target == es3 || target == es5 {
