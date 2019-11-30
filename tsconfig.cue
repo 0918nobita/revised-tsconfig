@@ -45,6 +45,9 @@ compilerOptions: {
   // Builds this project and all of its dependencies specified by Project References.
   build: true | *false
 
+  // The character set of the input files.
+  charset: string | *"utf8"
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
