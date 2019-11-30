@@ -42,6 +42,9 @@ compilerOptions: {
   // Base directory to resolve non-relative module names.
   baseUrl?: string
 
+  // Builds this project and all of its dependencies specified by Project References.
+  build: true | *false
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
