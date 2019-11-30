@@ -63,6 +63,9 @@ compilerOptions: {
   // Output directory for generated declaration files.
   declarationDir?: string
 
+  // Generates a sourcemap for each corresponding .d.ts file.
+  declarationMap: true | *false
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
