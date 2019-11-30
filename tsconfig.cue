@@ -90,6 +90,12 @@ compilerOptions: {
   // Disallow inconsistently-cased references to the same file.
   forceConsistentCasingInFileNames: true | *false
 
+  // Generates a cpu profile at the given path.
+  // Passing an existing directory name instead of
+  // a file path will cause a timestamp-named profile
+  // to be generated in that directory instead.
+  generateCpuProfile: string | *"profile.cpuprofile"
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
