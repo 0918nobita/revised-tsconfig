@@ -69,6 +69,9 @@ compilerOptions: {
   // Show diagnostic information.
   diagnostics: true | *false
 
+  // Disable size limitation on JavaScript project.
+  disableSizeLimit: true | *false
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
