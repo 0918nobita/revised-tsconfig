@@ -48,6 +48,11 @@ compilerOptions: {
   // The character set of the input files.
   charset: string | *"utf8"
 
+  // Report errors in .js files. Use in conjunction with --allowJs.
+  if allowJs == true {
+    checkJs: true | *false
+  }
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
