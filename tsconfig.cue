@@ -96,6 +96,9 @@ compilerOptions: {
   // to be generated in that directory instead.
   generateCpuProfile: string | *"profile.cpuprofile"
 
+  // The locale to use to show error messages, e.g. en-us.
+  locale: "en" | "cs" | "de" | "es" | "fr" | "it" | "ja" | "ko" | "pl" | "pt-BR" | "ru" | "tr" | "zh-CN" | "zh-TW"
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
