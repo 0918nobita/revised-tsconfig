@@ -53,6 +53,10 @@ compilerOptions: {
     checkJs: true | *false
   }
 
+  // Ensure TypeScript can determine where to find the outputs of
+  // the referenced project to compile project.
+  composite: *true | false
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
