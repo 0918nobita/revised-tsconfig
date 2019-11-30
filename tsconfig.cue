@@ -75,6 +75,9 @@ compilerOptions: {
   // Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files.
   emitBOM: true | *false
 
+  // Only emit .d.ts declaration files.
+  emitDeclarationOnly: true | *false
+
   // Specify ECMAScript target version
   target: *es3 | es5 | es6 | es2015 | es2016 | es2017 | es2018 | es2019 | es2020 | esnext
 
